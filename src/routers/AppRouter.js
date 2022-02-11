@@ -6,7 +6,7 @@ import { PublicRoute } from "./PublicRoute";
 
 export const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="https://gabriel-atencia.github.io/heroapp">
       <Routes>
         {/* <Route path="login" element={<LoginScreen />} /> */}
 

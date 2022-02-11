@@ -10,7 +10,7 @@ export const HeroeScreen = ({ publisher }) => {
   const hero = useMemo(() => getHeroById(heroeId), [heroeId]);
   if (!hero) return <Navigate to="/" />;
 
-  const imgPath = `/assets/${hero.id}.jpg`;
+  const imgPath = `./assets/${hero.id}.jpg`;
 
   const handleReturn = () => {
     navigate(-1);
