@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import { LoginScreen } from "../components/login/LoginScreen";
 import { DashBoardRoutes } from "./DashBoardRoutes";
 import { PrivateReout } from "./PrivateReout";
@@ -6,7 +6,7 @@ import { PublicRoute } from "./PublicRoute";
 
 export const AppRouter = () => {
   return (
-    <BrowserRouter basename="https://gabriel-atencia.github.io/heroapp">
+    <HashRouter>
       <Routes>
         {/* <Route path="login" element={<LoginScreen />} /> */}
 
@@ -29,6 +29,6 @@ export const AppRouter = () => {
           {/* <Route path="/*" element={<DashBoardRoutes />} /> */}
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
